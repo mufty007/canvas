@@ -50,7 +50,7 @@ var mouse = {
     y: undefined
 }
 
-var maxRadius = 40;
+var maxRadius = 70;
 //var minRadius = 3;
 
 var colorArrey = [
