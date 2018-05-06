@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet"> 
+    <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <title>Circles</title>
 
 
@@ -38,14 +40,21 @@
         top: 50vh;
         left:50vw;
     }
- 
+    #yourElement{
+        animation: 3s 2s infinate;
+        -moz-animation: 3s 2s infinate;
+        -webkit-animation: 3s 2s infinate;
+    }
    
 </style>
 </head>
 <body>
 
     <canvas id="can"></canvas>
-    <a href="https://codepen.io/mufty007"<button class="btn">See More In codepen</button><a/>
+    <a href="https://codepen.io/mufty007"<button id="yourElement" class="btn">See More In codepen</button><a/>
     <script src="canvas.js"></script>
+    <script>
+    $('#yourElement').addClass('animated bounceOutLeft');
+    </script>
 </body>
 </html>
